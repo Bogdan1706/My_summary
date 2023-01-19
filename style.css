@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Barcode+39+Text&family=Londrina+Outline&family=Rubik+Vinyl&family=Rye&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#fff;
+  background-color: gray;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.avatar {
+  position: relative;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.avatar-box {
+  height: 16.25em;
+  width: 50%;
+  margin-right: 7.8125em;
+  box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+  border-radius: 10%;
+  background-color: #49494b ;
+}
+
+.avatar .avatar-box:nth-child(2) {
+  margin-right: 0;
+}
+
+.avatar-img {
+  position: absolute;
+  top: 13%;
+  left: 34%;
+  /* top: 2.3125em; */
+  /* left: 21.875em; */
+  width: 23.75em;
+  height: 15.625em;
+  border-radius: 10%;
+  box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+}
+
+
+
+
+.title {
+  position: absolute;
+  top: 58%;
+  left: 17%;
+  font-size: 7em;
+  text-align: center;
+  font-family: 'Londrina Outline';
+  opacity: 0.5;
+  margin: 0;
+}
+
+.avatar-box__text, .avatar-box__signature {
+  margin-right: 0.9375em;
+  text-align: end;
+  font-family:'Londrina Outline';
+  color: rgba(255, 255, 255, 0.644);
+}
+
+
+
+@media (max-width:1000px) {
+  .avatar {
+    position: relative;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar-box {
+    height: 16.25em;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 2.8125em;
+    box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+    border-radius: 10%;
+    background-color: #49494b ;
+  }
+
+  .avatar .avatar-box:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+
+  .avatar-img {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    /* top: 9em;
+    left: 294px; */
+    width: 380px;
+    height: 250px;
+    border-radius: 10%;
+    margin-left: 10px;
+   box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+  }
+
+  .title {
+    position: absolute;
+    top: 4%;
+    left: 36%;
+    font-size: 7em;
+    text-align: center;
+    font-family: 'Londrina Outline';
+    opacity: 0.5;
+  }
+
+  .avatar-box__text, .avatar-box__signature {
+    margin-right: 15px;
+    margin-top: 95px;
+    text-align: end;
+    font-family:'Londrina Outline';
+    color: rgba(255, 255, 255, 0.644);
+  }
+
+  .avatar-box .avatar-box__signature:last-child {
+    margin-top: 5px;
+   
+  }
+
+}
+
+@media (max-width:650px) {
+  .avatar {
+    position: relative;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar-box {
+    height: 16.25em;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 2.8125em;
+    box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+    border-radius: 10%;
+    background-color: #49494b ;
+  }
+
+  .avatar .avatar-box:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+
+  .avatar-img {
+    position: absolute;
+    top: 27%;
+    left: 22%;
+    /* top: 9em;
+    left: 294px; */
+    width: 336px;
+    height: 226px;
+    border-radius: 10%;
+    margin-left: 10px;
+   box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+  }
+
+  .title {
+    position: absolute;
+    top: 4%;
+    left: 32%;
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Londrina Outline';
+    opacity: 0.5;
+  }
+
+  .avatar-box__text, .avatar-box__signature {
+    margin-right: 15px;
+    margin-top: 95px;
+    text-align: end;
+    font-family:'Londrina Outline';
+    color: rgba(255, 255, 255, 0.644);
+  }
+
+  .avatar-box .avatar-box__signature:last-child {
+    margin-top: 5px;
+   
+  }
+
+}
+
+.card {
+  margin: 20px 0;
+  padding: 20px 0;
+  
+  border-radius: 10%;
+  background-color: #4b4a49 ;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 2px rgb(211, 211, 211);
+}
+
+.card:last-child {
+  padding: 40px 0;
+} 
+
+.card-title {
+  max-width: 25%;
+  padding: 10px;
+  background-color: #583d19;
+  font-family: 'Rubik Vinyl';
+  border-radius: 0 15px 0 0;
+}
+
+.card-title h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.card-text {
+  padding: 18px;
+  background-color: #006363;
+  
+}
+
+.card .card-text:last-child {
+  padding-right: 0;
+}
+
+.card-text .link {
+  color: rgb(250, 116, 7);
+  text-decoration: none;
+}
+
+.card-text .link:hover {
+  color: rgb(252, 251, 251);
+  text-decoration: underline;
+}
+
+.table thead  tr th {
+  padding: 10px;
+  border: 1px solid rgb(250, 116, 7);
+  text-align: center;
+}
+
+.table tbody tr td {
+  padding: 10px;
+  border: 1px solid rgb(250, 116, 7);
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-row .form-group {
+  display: inline-block;
+  margin-right: 20px ;
+  width: calc(50% - 20px);
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  font-style: 14px;
+  color: #f8d124;
+}
+
+
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fd8903;
+  color: rgb(3, 3, 94);
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #006363;
+  color: #f8d124;
+  border-radius: 15px;
+  border: 2px solid #fd8903;
+  font-size: 16px;
+}
+
+.btn:hover  {
+  color: #fdf909;
+  border: none;
+  border-top: 2px solid #fd8903;
+  border-bottom: 2px solid #fd8903;
+  background-color: #fd880348;
+  box-shadow: 0px 0px 8px 2px rgb(250, 148, 14);
+  cursor: pointer;
+}
+
+
+@media (max-width:650px) {
+  .form-row .form-group {
+    display: block;
+    /* display: inline-block; */
+    margin-bottom: 10px;
+    width: calc(100%);
+  }
+
+}
+
+
+
+
+
+
+
+
+
